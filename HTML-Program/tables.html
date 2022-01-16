@@ -1,0 +1,91 @@
+>table tag is used to display the data in form rows & cols in the web page.
+> a table is a collection of rows, each row is collection of cells/col/field.
+realtime: marks memo, cricket score, points table, new batches list, selected candi list, list buses, list trains, etc...
+
+> a table is represented as  &lt;table&gt;  tag, a row represented as  &lt;tr&gt;  tag, a colheading is represented as  th  tag, data rep as  td  tag.
+> table heading is represented as  caption  tag.
+>  thead  tag is rep of table head,  tbody  tag is rep of table body and  tfoot  is rep of table footer.
+> these 3tags ava since html5.0
+
+
+<!-- example on table tags -->
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Ex22</title>
+	<link rel="icon" href="logo.png">
+	<style>
+		a{
+			color:#ffff00;
+			text-decoration: none;
+		}
+	</style>
+  </head>
+  <body>
+	<h2>demo on tables</h2>
+
+	<table  align="center" style="width:500px; background-color: #ff0033; color:white; text-align:center;" >
+		<caption style="color:#3300ff; font-size:20px;">Men's ODI Batting Rankings</caption>	<!--table main heading -->
+		<!-- column headings -->	
+		<tr style="background:#0000ff;">
+			<th>POS</th> <th>PLAYER</th> <th>TEAM</th> <th>RATING</th>
+		</tr>
+		<!-- table data -->
+		<tr>
+			<td>1</td>
+			<td>
+				<img src="images/virat.webp" style="width:50px; height:50px; border-radius:25px;">
+				<a href="https://www.icc-cricket.com/rankings/mens/player-rankings/164">Virat Kohli</a>
+			</td>
+			<td>IND</td>
+			<td>870</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>
+				<img src="images/rohit.webp" style="width:50px; height:50px; border-radius:25px;">
+				<a href="https://www.icc-cricket.com/rankings/mens/player-rankings/107">Rohit Sharma</a>
+			</td>
+			<td>IND</td>
+			<td>842</td>
+		</tr>
+		<tr>
+			<td>3 </td>
+			<td>
+				<img src="images/babar.webp" style="width:50px; height:50px; border-radius:25px;">
+				<a href="https://www.icc-cricket.com/rankings/mens/player-rankings/2759">Babar Azam</a>
+			</td>
+			<td>PAK</td>
+			<td>837</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>
+				<img src="images/ross.webp" style="width:50px; height:50px; border-radius:25px;">
+				<a href="https://www.icc-cricket.com/rankings/mens/player-rankings/226">Ross Taylor</a>
+			</td>
+			<td>NZ</td>
+			<td>818</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>
+				<img src="images/aaron.webp" style="width:50px; height:50px; border-radius:25px;">
+				<a href="https://www.icc-cricket.com/rankings/mens/player-rankings/167">Aaron Finch</a>
+			</td>
+			<td>AUS</td>
+			<td>791</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>
+				<img src="images/plessis.png" style="width:50px; height:50px; border-radius:25px;">
+				<a href="https://www.icc-cricket.com/rankings/mens/player-rankings/24">Du Plessis</a>
+			</td>
+			<td>SA</td>
+			<td>790</td>
+		</tr>
+	</table>
+
+  </body>
+</html>
