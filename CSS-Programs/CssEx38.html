@@ -1,0 +1,48 @@
+<!-- example on custom animations -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	 @keyframes changecolor1 
+	 {
+		  from {background-color: #ff0000;} /* bgcolor from red to blue*/
+		  to {background-color: #3300ff;}
+	 }
+
+	 @keyframes changecolor2 
+	 {
+		  from {background-color: #ff00ff;} /* bgcolor from pink to green*/
+		  to {background-color: #33ff00;}
+	 }
+
+	h1{
+		font-size:50px; 
+		text-align:center;	
+	}
+
+	h1.anim1 {
+		  width: 100%;
+		  height: 60px;					
+		  animation-name: changecolor1;
+		  animation-duration: 3s;
+	 } 
+
+	 h1.anim2 {
+	  width: 100%;
+	  height: 60px;					
+	  animation-name: changecolor2;
+	  animation-duration: 3s;
+	 } 
+</style>
+</head>
+<body>
+   <h1 class="anim1" style="color:#00cc00; "> Naresh i Tech </h1>
+  
+   <h1 class="anim2" style="color:#33ffff;"> Software Training </h1>
+
+	<h1 class="anim1" style="color:#ffff00;"> Siva Kumar Y</h1>
+
+	<h1 class="anim2" style="color:#ff9900;"> Civil Engineer </h1>
+</body>
+</html>
+		
