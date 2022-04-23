@@ -1,0 +1,36 @@
+<!-- example on JS arrays -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>ArrayEx1</title>
+ </head>
+<body>  
+  <h2>Demo On Arrays</h2>	
+  <script>
+	//1st apporch
+		let a = [ ];	 //array declaration
+		a[0] = 12;		//assign data to array
+		a[1] = 23;
+		a[2] = 34;
+		document.write("Array => " + a + "<br>"); 
+		document.write("Size => " + a.length + "<br>");
+		document.write("a[0] =>" + a[0] + "<br>");
+		document.write("a[1] =>" + a[1] + "<br>");
+		document.write("a[2] =>" + a[2] + "<br>");
+
+    //2nd Approch
+    //array initialization
+    var runs=[4, 10, 8, 15, 1, 8];  // it rep runs			 
+    document.write("Runs : "+ runs + "<br>");  
+    document.write("Overs : "+ runs.length +"<br>");
+
+	let total=0;
+    for(i=0; i<runs.length; i++) {  
+       document.write("Over "+ (i+1) + " : "+ runs[i] + "<br>");  
+		total=total+runs[i];
+    }	
+	document.write("Total Runs : "+total);
+  </script>
+</body>
+</html>
+
