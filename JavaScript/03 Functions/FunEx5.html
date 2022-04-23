@@ -1,0 +1,26 @@
+<!-- If a same-named variable is declared inside the function then it shadows the outer one. 
+For Example, in the code below the function uses the local userName. The outer one is ignored -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fun Ex5</title>
+  </head>
+  <body>
+    <h2>Demo on shadowing</h2>
+    <script>
+      //let userName="Apple";	//outer/global
+      window.userName = "Apple";
+
+      function showMessage() {
+        let userName = "Mango"; //local variable (shadow)
+
+        document.write("Hi " + userName + "<br>"); //it always subtitues local (shadow)
+        document.write("Hello " + window.userName + "<br>"); //it subtitues outer
+      }
+
+      showMessage();
+      document.write("Hey " + userName + "<br>"); //it subtitues outer
+    </script>
+  </body>
+</html>
