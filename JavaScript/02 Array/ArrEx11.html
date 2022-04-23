@@ -1,0 +1,42 @@
+<!-- example on for in loop, for of loop and foreach() method (JS6 version) -->
+<html>
+  <h1> example on for in </h1>
+  <script>
+	var a=[ ];		//it creates array
+	a.push(10);		//or  a.unshift(10);  or 	a[0]=10;
+	a.push(25);
+	a.push(78);
+	a.push(30);
+	a.push(55);
+	a.push(34);
+ 				    
+ 	for(let i  in  a){	  //getting index only
+      document.write( i +"&nbsp;&nbsp;"+ a[i] +"<br>" );
+	}
+  </script>
+
+  <h1> example on for of </h1>
+  <script>
+	var b=[13, 25, 79, 40, 60, 33, 55, 88, 99];
+    var s=0;           
+	for(let ele of b){	  //getting data 
+      document.write( ele + "&nbsp;&nbsp;" );
+      s=s+ele;
+    }
+    document.write("<br> Sum of Ele : "+s);
+  </script>
+
+<h1> example on foreach method </h1>
+  <script>
+	var names=["siva","prakash","radhi","pinky","nani","rama"];
+
+                                  //functional pointer/ref
+	names.forEach( function(t)
+								  { 
+									document.write(t, "<br>"); 
+								  } 
+								);
+    </script> 
+
+  
+ </html>

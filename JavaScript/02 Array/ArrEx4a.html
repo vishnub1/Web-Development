@@ -1,0 +1,38 @@
+<!-- example on Array -->
+  <h2>example on Sum of Array</h2>
+	<label>Enter Number</label>
+	<input type="text" id="txtNum"> &nbsp;&nbsp;
+    <button onclick="addItem()">Add Item</button> &nbsp;&nbsp;
+    <button onclick="getTotal()">get Total</button> <br> <br>
+
+	<output id="dat"> </output> <bR> <bR>
+	<output id="result"> </output>
+
+  <script>
+    var data = new Array();
+	var i=0;
+
+	function addItem()
+	{
+		data[i] = parseInt( txtNum.value );
+		i++;   
+		txtNum.value="";
+		txtNum.focus();		
+	}
+
+    function getTotal()
+	{
+		let total=0;
+		for(j=0; j<data.length; j++)
+			total+=data[j];
+		
+		dat.value=data;
+		result.value="Sum Of Array Elements : "+total;
+	}
+  </script>
+
+
+
+
+ 
+
