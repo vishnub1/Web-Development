@@ -1,0 +1,25 @@
+<!-- example on non-parameter constructor 
+		Note: used for static initialization of objects	 -->
+<Html>
+<head>
+  <title>constructor</title>
+</head>
+<body>
+<h2> creating object with constructor without parameters </h2>
+<script>
+  function Book()  //dev constructor
+  {				
+    this.name = "C Prog";  //properties
+    this.year = 2021;
+  }
+
+  var firstBook = new Book();  //calling const
+  var secondBook = new Book(); 
+  //var third = Book();  its invalid operation
+
+  document.write(`${firstBook.name}  ==> ${firstBook.year} <br>`);           
+  document.write(`${secondBook.name} ==> ${secondBook.year} <br>`);   
+</script>
+</body>
+</html>
+

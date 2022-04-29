@@ -1,0 +1,23 @@
+<!-- example on OOPs -->
+<Html>
+<head>
+  <title>object literals</title>
+</head>
+<body>
+  <h1> object with methods </h1>
+  <script>
+    var ob = { "mymethod": function() {
+											      document.write("hi, im method1<br>"); 
+												},
+					 "add": function(a,b) {
+									return (a+b);
+								 }
+ 			     };
+  
+	ob.mymethod();
+    document.write("Sum is " + ob.add(12, 45) + "<br>");
+	document.write( ob.toString() );
+</script>
+</body>
+</html>
+

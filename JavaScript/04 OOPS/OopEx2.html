@@ -1,0 +1,81 @@
+<!-- example on OOPs -->
+<Html>
+<head>
+  <title>object literals</title>		
+</head>
+<body>
+<h1> object with properties and methods </h1>
+<script>
+    let stu1 = { "id" : 1, name : "ram", marks: 30, 
+					    "getResult": function() {
+												if(this.marks>=40)
+														return "Pass";
+												else
+														return "Fail";
+									          }
+			        };
+/*
+	properties ==> method or constructor this must
+	this => keyword
+				 reference of cwo		*/
+
+	//document.write("ID  : " + stu1.id + "<br>");
+    document.write(`Id	: ${stu1.id} <br>`);		//string interpolation
+	document.write(`Name	: ${stu1.name} <br>`);
+	document.write(`Marks	: ${stu1.marks} <br>`);
+	document.write(`Result is	: ${stu1.getResult()} <br>`);
+
+    //updating
+	stu1.marks=56;
+	document.write(`Marks	: ${stu1.marks} <br>`);
+	document.write(`Result is	: ${stu1.getResult()} <br>`);
+	document.write(stu1 +"<br><br>");
+
+/* for 2nd object:
+    let stu2 = { "id" : 2, name : "sam", marks: 70,   
+					 "getResult": function() {
+											if(this.marks>=40)
+												return "Pass";
+											else
+												return "Fail";
+									    }					
+			        };
+	
+    let stu3 = { "id" : 3, name : "ram", marks: 66, 
+					 "getResult": function() {
+											if(this.marks>=40)
+												return "Pass";
+											else
+												return "Fail";
+									    }
+			        };
+	*/
+
+</script>
+</body>
+</html>
+
+<!--
+	let emp ={id:101, name:ram, sal:30000,
+						m1: function(){
+									code
+								}
+						m2: function(){
+									code
+								}
+					
+					};				
+
+	let book ={id:111, name:"html", price:400, author:tim,
+						m1: function(){
+									code
+								}
+						m2: function(){
+									code
+								}
+					   ...
+					};			
+
+	let product= {	};
+
+	-->

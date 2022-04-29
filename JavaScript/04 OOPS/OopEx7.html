@@ -1,0 +1,54 @@
+<!-- object Array with constructor function -->
+<Html>
+<body>
+<h2> Creating Object Array with constructor </h2>
+<script>
+	function Employee(id,name,salary)
+	{
+		this.id=id;
+		this.name=name;
+		this.salary=salary;
+	}    
+
+   /* 
+   let emp1= new Employee(11, "ram", 35000);
+   let emp2= new Employee(22, "sam", 45000);
+   let emp3= new Employee(33, "rahim", 25000);
+   let emps = [emp1, emp2, emp3];
+		OR	*/
+   let emps = [ new Employee(11, "ram", 35000), 
+					     new Employee(22, "sam", 45000),
+					     new Employee(33, "rahim", 25000),
+					     new Employee(44, "singh", 55000)
+				      ];
+/*
+   //retrieving data from array
+   document.write(`<table border>`);
+   document.write(`<tr> <th>EID</th> <th>NAME</th> <th>SALARY</th> </tr>`);
+   for(let e of emps)  //coll 1-by-1 object
+   {
+	  document.write(`<tr>`);
+         document.write(`<td> ${e.id} </td>`);
+		 document.write(`<td> ${e.name} </td>`);
+		 document.write(`<td> ${e.salary} </td>`);
+	  document.write(`</tr>`);
+   }
+   document.write(`</table>`);	*/
+
+	//document.write("<div style='display:flex;'>"); 
+	document.write("<div style='display:grid; grid-template-columns:auto auto;'>");
+	for(let e of emps)  //coll 1-by-1 object
+	{
+	  document.write(`<div style='background:#99ffff; width:400px; margin-bottom:5px;'>`);
+         document.write(`<h2> ${e.id} </h2>`);
+		 document.write(`<h2 style='display:inline-block; width:300px;'> ${e.name} </h2>`);
+		 document.write(`<h2 style='display:inline-block; width:300px;'> ${e.salary} </h2>`);
+	  document.write(`</div>`);
+	}
+	document.write("</div>");
+
+</script>
+</body>
+</html>
+
+	
