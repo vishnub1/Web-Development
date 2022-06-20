@@ -100,6 +100,8 @@ Parameters,
 Example:
 <embed src="canyon.mid" Autostart=TRUE Width=145 Height=60 Loop=true>
 	
+	
+	
 What are the list tags in HTML?
 HTML List Tags
 Tag	Description
