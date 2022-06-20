@@ -1,0 +1,122 @@
+                                            HTML Interview Question
+What do you know about HTML?
+Is it mandatory to close all the tags in HTML? 
+Not mandatory
+
+What is meant by head in HTML?
+The <head> element is a container for metadata (data about data) and is placed between the <html>   tag and the <body> tag. Metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.
+
+What is the use of image map?
+Image maps provide a convenient way of linking different sections of an image without the need to create image files for the image. An image map is also known as a clickable image map.
+
+Does a hyperlink only apply to text?
+No, Hyperlink can be applied to text as well as images, videos, numbers or any other HTML property.
+
+Is it possible to create multi-coloured text on a web page?
+yes
+
+What are Web Standards?
+Web standards are the technologies we use to build web sites. These standards exist as long technical documents called specifications, which detail exactly how the technology should work.
+
+What will you do if I asked you to insert a copyright symbol on your web page?
+To insert the copyright symbol, you need to type &copy; or & #169; in an HTML file.
+
+How to keep list elements straight in an HTML file?
+You can keep the list elements straight by using indents in an HTML file. The list-style-position property is used to keep list elements straight in an HTML file
+
+Is older html files work on newer browsers?
+Yes, older html files are compliant to the HTML standard. Most older files work on the newer browsers, though some features may not work
+
+What will happen if you overlap sets of tags?
+If two sets of HTML tags are overlapped, only the first tag will be recognized. You will find this problem when the text does not display properly on the browser screen.
+
+What will happen if there is no text between the tags?
+if there is no text between the tags, then there is nothing to format. Therefore no formatting will appear. Some tags, especially tags without a closing tag like the <img> tag, do not require any text between them.
+
+Is it possible to set specific colours for table borders?
+You can specify a border color using style sheets, but the colors for a table that does not use style sheets will be the same as the text color.
+
+Can a single text link point to two different web pages?	
+No, A single text link cannot point to two different web pages because <a> tag can accept only single href attribute.
+
+Which command is use to create a text on a webpage that will allow you to send an email when clicked?
+HTML <a> tag provides you option to specify an email address to send an email. While using <a> tag as an email tag, you will use mailto: email address along with href attribute.
+
+Style sheets limit the number of new style definitions that can be included within the brackets. Is the above sentence correct?
+Style sheets do not limit the number of style definitions that can be included within the brackets for a given selector. Every new style definition, however, must be separated from the others by a semicolon symbol
+
+What will happen if you open the external CSS file in a browser?
+When you try to open the external CSS file in a browser, the browser cannot open the file, because the file has a different extension. The only way to use an external CSS file is to reference it using tag within another HTML document
+
+What is the use of <dl> tag in HTML?	
+The <dl> HTML element represents a description list. 
+
+What is the difference between HTML and XHTML?	
+HTML is SGML-based while XHTML is XML-based. They are like two sides of the same coin. XHTML was derived from HTML to conform to XML standards. Hence XHTML is strict when compared to HTML and does not allow user to get away with lapses in coding and structure.
+
+Does HTML support JavaScript?
+Yes, Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+
+What do you know about GET and POST method in HTML?
+GET Method
+GET method data is encoded into a URL by the browser.
+The data is visible in the URL which allows it to be bookmarked and stored in web history.
+This method requests data from a specified resource.
+In GET method, the data is restricted to ASCII codes. Because URL lengths are limited there can be limitations on how much form data can be sent.
+GET requests should never be used when dealing with sensitive data because the requests remain in the browser history and the requests can be cached.
+POST Method
+In POST method, all the name value pairs are submitted in the message body of the HTTP request which has no restrictions on the length of the string.
+The data is not visible in the web browser bar.
+This method submits data to be processed to a specified resource.
+POST requests are never cached and the requests do not remain in the browser history and cannot be bookmarked.
+
+What is the importance of HTML <!DOCTYPE>?	
+The doctype is the tag that tells our browser about the type of document. HTML document is a textdocument read in by a Web browser and then rendered on the screen. It is important to give instruction to web browser about version of HTML page. Html doctype should be declared very first before any tags.
+
+How to use JavaScript along with HTML?	
+You can add JavaScript code in an HTML document by employing the dedicated HTML tag <script> that wraps around JavaScript code. The <script> tag can be placed in the <head> section of your HTML or in the <body> section, depending on when you want the JavaScript to load
+
+What is the use of iframes?	
+An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
+
+What is the difference between 'div' and 'frame' tags?
+A <div> is a generic container element for grouping and styling, whereas a <frame> creates divisions within a web page and should be used within the <frameset> tag.
+What is SPAN in HTML?
+The <span> tag is an inline container used to mark up a part of a text, or a part of a document. The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute. The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+	
+How to change the number type in the middle of a list?
+The <li> tag includes two attributes – type and value. The type attribute can be used to change the numbering type for any list item. The value attribute can change the number index.
+
+What do you know about <textarea> tag?	
+The <textarea> tag defines a multi-line text input control. The <textarea> element is often used in a form, to collect user inputs like comments or reviews. A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+
+How to add midi music to a web page?
+Answer:
+To add midi Music in HTML web page following tag is used:
+<bgsound src="music.mid" loop="1">
+Parameters,
+'loop = 1' : This parameter shows that music.mid is played only for one time. You can also set the value of loop to infinite. This tag is supported by Netscape and Internet Explorer.
+Example:
+<embed src="canyon.mid" Autostart=TRUE Width=145 Height=60 Loop=true>
+	
+What are the list tags in HTML?
+HTML List Tags
+Tag	Description
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+
+What is difference between HTML and HTML5?	
+A hypertext markup language (HTML) is the primary language for developing web pages. HTML5 is a new version of HTML with new functionalities with markup language with Internet technologies. Language in HTML does not have support for video and audio. HTML5 supports both video and audio.14-Sept-2021
+
+What is the use of CSS in HTML?
+CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.
+
+Why is it important to set the meta information?	
+Meta tags are the first impression someone has of your page on a SERP. A good meta description will attract users to click through and visit your site. They ensure that search engines know what your content is about, so they'll be able to show the website in the appropriate results
+
+What is <pre> tag in HTML?	
+Definition and Usage. The <pre> tag defines preformatted text. Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code.
+What is the use of Marquee tag in HTML?	
+The <marquee> HTML element is used to insert a scrolling area of text. You can control what happens when the text reaches the edges of its content area using its attributes.
