@@ -1,0 +1,24 @@
+<!-- play & pause -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play & Pause</title>
+</head>
+<body>
+    <button onclick="playVideo()" type="button">Play video </button>
+    <button onclick="pauseVideo()" type="button">Pause video </button><br>
+    <video id="myVideo" width="900" height="600">
+        <source src="/HTML5/BESABRIYAAN Full.mp4" type="video/mp4">
+    </video>
+    <script>
+        var vid = document.getElementById("myVideo");
+        function playVideo(){
+            vid.play();
+        }
+        function pauseVideo(){
+            vid.pause();
+        }
+    </script>
+</body>
+</html>

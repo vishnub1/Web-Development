@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1.17</title>
+    </head>
+    <body>
+        <form action="">
+            first name: <input type="text" name="fname" placeholder="Enter  first name"><br>
+            last name : <input type="text" name="lname" required><br>
+            Points : <input type="number" name="points" step="3"><br>
+            Country code : <input type="text" name="country_code" pattern="[A-Z a-z][{3}" title="Three letter country code"> <br>
+
+            subject list : <input list="subject" name="browser">
+
+            <datalist id="subject">
+                <option value="HTML5"></option>
+                <option value="CSS3"></option> 
+                <option value="Javascript"></option>   
+            </datalist>
+
+            Enter a date before 1991-22-12:
+            <input type="date" name="bday" max="1991-22-12"><br>
+
+            Enter a date after 2022-13-07:
+            <input type="date" name="bday" min="2022-13-07"><br>
+
+            select images:
+            <input type="file" name="img" multiple><br>
+            <input type="submit" value="submit"><br>
+            <input type="image" src="/HTML5/1644247135366.jpg" alt="submit" width="400" height="200">
+       
+        </form>
+    </body>
+</html>

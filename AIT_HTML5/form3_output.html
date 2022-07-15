@@ -1,0 +1,20 @@
+<!-- Output Elemen
+
+    the output element represent the result of calculation 
+    you can add the for attribute to specify the relation between the result of the
+    calculation and the elements used in the calculation.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Output Example</title>
+  </head>
+  <body>
+    <form oninput="result.value=parseInt(first.value)+parseInt(second.value)">
+      <input name="first" type="number" value="0" /> +
+      <input name="second" type="number" value="0" /> =
+      <output name="result" for="first second">0</output>
+    </form>
+  </body>
+</html>
