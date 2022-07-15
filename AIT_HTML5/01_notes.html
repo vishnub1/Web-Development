@@ -1,0 +1,296 @@
+INTRODUCTION TO HTML
+--------------------
+    - To learn the basic concept of HTML5.
+    - To study structure of web page.
+    - To study HTML5<audio>, <video> and <canvas>.
+    - To learn Version Compatibility.
+    - To understand the concept of svg(Scalable Vector Graphics).
+==================================================================
+    
+    There are three organization that are currently in change of the specification of HTML5
+        - WHATWG(web hypertext application technology)
+        - W3C(World Wide Web Consortium)
+        - IETF(Internet Engineering Task Force)
+
+
+Features of HTML5
+================= 
+    HTML5 introduce a number of new element and attributes that can help us
+    in building modern websites.
+
+   -  New Semantic Elements
+        <header> 
+        <footer>
+        <selection> ect.
+
+   - Forms 2.0 
+        <input>
+
+   - Persistance Logical Storage     
+
+   - WebSocket
+
+   - Server Sent Event
+
+   - Canvas
+
+   - Audio and video
+
+   - Geolocation
+
+   - Microdata
+
+   - Drag and Drop
+
+==========================================================================================
+
+Semantic element in HTML5
+
+    Different web pages/websites look different; they all possess a basic common structure.
+    to follow the common structure and semantic, HTML5 provides dedicated element. 
+    for example
+        <header>
+        <nav>
+        <section>
+        <aside>
+        <article>
+        <footer>
+
+    A sample HTML5 document structure can be below
+|---------------------------------------------------|
+|                                                   |
+|                 <header>                          |
+|                                                   |
+----------------------------------------------------|
+|                                                   |
+|                 <nav>                             |
+|                                                   |
+----------------------------------------------------|
+|                            |                      |
+|    <section>               |                      |
+|                            |                      |
+|----------------------------|       <aside>        |
+|                            |                      |
+|    <article>               |                      |
+|                            |                      |
+|---------------------------------------------------|
+|                                                   |
+|                <footer>                           |
+|                                                   |
+|---------------------------------------------------|
+
+<header>
+
+<article>
+
+<main>
+
+<nav>
+
+<section>
+
+<aside>
+
+<address>
+
+===================================================================
+
+form new element
+----------------
+
+    html5 introduced a number of form attributes some of them are
+    <detalist>
+    <keygen>
+    <output>
+    <progress>
+    <meter>
+
+===================================================================
+
+form new attributes
+-------------------
+
+  - autocomplete
+  - autofocus
+  - form
+  
+  - formaction : The formaction attributes can be used to override the action attributes of the <form> 
+                element and to specify the URL of a file that will process the input control when the form is submitted.
+
+  - formenctype: The formenctype a attributes specifies how the form data should be encoded when submitted
+
+  - formmethod :
+  - formnovalidate:
+  - formtarget:
+  
+  - height and width:
+  - list
+  - min and max
+  - multiple
+  - pattern
+  - placeholder
+  - required
+  - step
+
+==================================================================================================
+
+<audio> and <video>
+--------------------
+
+    The html5 <audio> and <video> tags are makes it easy to add media to a website.
+    we need to set src attribute to find the media source and include a controls attribute 
+    so the user can play and pause the media.
+
+    <audio>
+        The recently introduced HTML5 <audio> element provides a standard way to embed audio in web pages. however,the <audio> element is relatively new but it works in most of the modern web browser.
+
+    * attributes of <audio> and <video> element
+    -------------------------------------------
+        1.Preload
+        2.autoplay
+        3.loop
+        4.muted
+        5.mediagroup
+        6.controls
+        7.src
+        8.height
+        9.width
+        10.poster
+
+    * understanding the <video>/<audio> events 
+    --------------------------------------------
+       1. abort
+       2. canplay
+       3. ended
+       4. error
+       5. loadeddata
+       6. loadstart
+       7. pause
+       8. play
+       9. progress
+       10.ratechange
+       11.seeked
+       12.seeking
+       13.suspend
+       14.volumechange
+       15.waiting
+
+=========================================================================================================
+
+<canvas>
+---------
+
+    The <canvas> tag in HTML is used to draw graphics on a web page using javascript.
+    it can be used to draw path,boxes,text,gradient and adding images. By default it 
+    does not contain borders and text.
+
+    The canvas was originally introduced by apple for the mac os dashboard widget and 
+    to power graphics in the safari web browser. Later it was adopted by firefox, Google Chrome 
+    and Opera. Now the canvas is a part of the new HTML5 specification for next generation web technologies.
+
+  How to create a HTML canvas?
+    A canvas is a rectangle like area on an HTML page it is specified with canvas element.
+    by default the canvas element has no border and no content, it is like a container.
+
+    <canvas id = "mycanvas" width="200" height="3000"> </canvas>
+
+    we can fill color inside the canvas shape using the fillstyle() method.
+
+    while styling the shapes on canvas, it is recommended to use the fill() method before the
+    stroke() method in order to render the stroke correctly.
+
+    
+    * method and properties of <canvas>
+    -----------------------------------
+    Properties:
+        fillStyle
+        strokeStyle
+        shadowColor
+        shadowBlur
+        shadowOffsetX
+        shadowOffsetY
+
+    Mehods
+        createLinearGradient()
+        createPattern()
+        createRadialGradient()
+        addColorStop()
+
+    lineae style properties
+        lineCap()    
+        lineJoin()
+        lineWidth()
+        lineLimit()
+
+    Rectangle Method
+        rect()
+        fillRect()
+        strokeRect()    
+        clearRect()
+
+    path Method    
+        fill()
+        stroke()
+        beingPath()
+        moveTo
+        closePath()
+        lineTo()
+        clip()
+        quadraticCurveTo()
+        bezierCurveTo()
+        arcTo()
+        isPointInPath()
+
+==================================================================================================================
+
+    Canvas vs SVG
+   ****************
+------------------------------------------------------------------------------------------------------------------
+                SVG                                                     Canvas
+------------------------------------------------------------------------------------------------------------------
+
+    - it is object model based                              |   - it is pixel based
+    
+    - it is suitable for using larger rendering area        |   - suitable for small rendering
+    
+    - svg provides any support for event handlers           |   - canvas not provides any resource for event hndlr
+    
+    - modification is allowed through script and css        |   -  modification allowed through script only
+    
+    - svg has better scalability                            |   -  canvas has poor scalability
+    
+    - svg is vector based                                   |   -  canvas is raster based
+    
+    - is not suitable for game graphics                     |   - is suitable for game graphics
+    
+    - svg does not depend on resolution                     |   - canvas is completely dependent on resolution
+    
+    - svg is capable for API animation                      |   - canvas has no API for animation
+    
+    - svg is suitable for printing with high                |   - canvas is not suitable for printing high quality
+      quality and any resolution                                  and high resolution
+------------------------------------------------------------------------------------------------------------------
+
+=================================================================================================================
+
+    Introduction to version compatibility
+    -------------------------------------
+
+        There are three main aims of HTML5
+            1. Specifying current browser behaviors that are interoperable.
+            2. defining error handling for the first time
+            3. evolving the language for easier authoring of web application.
+
+=================================================================================
+
+    Installation of Apache Tomcat (xampp/lampp/mysql)
+    --------------------------------------------------
+        
+        * Basic packages include system, programming & server Software
+            apache      : from the web server
+            mysql       : the widely used, free, open-source
+            php         : The programming language
+            perl        : The programming language
+            proFTPD     : An FTP server
+            OpenSSL     : for secure socket layer support
+            phpMyAdmin  : for MySql admin
