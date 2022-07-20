@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      input indeterminate {
+        box-shadow: 0 0 3px 3px red;
+        background: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="myCheckbox" />checkbox
+    <script>
+      var checkbox = document.getElementById("myCheckbox");
+      checkbox.indeterminate = true;
+    </script>
+  </body>
+</html>

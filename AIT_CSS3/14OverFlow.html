@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>text-overflow</title>
+  </head>
+  <style>
+    p.N1 {
+      white-space: nowrap; /*Text not goes to next line */
+      width: 200px;
+      border: 1px solid dodgerblue;
+      overflow: hidden;
+      text-overflow: clip;
+    }
+    p.N2 {
+      white-space: nowrap;
+      width: 200px;
+      border: 1px solid #631ee2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+  <body>
+    <h2>Text-Overflow</h2>
+    <p class="N1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo
+      recusandae porro. Eligendi, itaque accusamus! Nobis dolorem a nam
+      accusamus debitis quidem. Dolores repudiandae fugit expedita ratione quis
+      deserunt delectus.
+    </p>
+
+    <h2>text-overflow:ellipsis</h2>
+    <p class="N2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+      sequi. Magnam alias totam rem nulla suscipit, quibusdam excepturi tempore
+      delectus similique corporis voluptates possimus vero dolorum
+      exercitationem esse eum sunt?
+    </p>
+  </body>
+</html>
